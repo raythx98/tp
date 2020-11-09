@@ -106,7 +106,7 @@ Name of input field   | How to use them
 ----------------------|------------------------------------
 `NAME`                | Name of candidate being added or edited.<br/>:memo: *Names should contain only alphanumerical values or spaces.*
 `PHONE_NUMBER`        | Contact number of candidate or job listing being added or edited.
-`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-job-edit-can) *or* [edit job](#53-editing-a-job-edit-job)*feature to correct it.*
+`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-can-edit-can) *or* [edit job](#53-editing-a-job-edit-job)*feature to correct it.*
 `ADDRESS`             | Residential address of a candidate or work address of a job listing.
 `YEARS_OF_EXPERIENCE` | Years of experience of the candidate in the relevant job he/she applied for.<br/>:memo: *This field accepts up to 2 decimal points excluding trailing zeroes.*
 `DATE_OF_APPLICATION` | Date of application submitted by candidate.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
@@ -418,8 +418,6 @@ To delete a particular candidate from the list, you can use the command below.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Deletes the candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :exclamation: *The specified candidate’s data will be cleared and this action is irreversible. 
 Please ensure you do not require the candidate’s data anymore before performing this command.*
 
@@ -464,8 +462,6 @@ Want to view all the information of a particular candidate? *CANdidates* provide
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Displays all the information of a candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list.*
-<br>
 :exclamation: `INDEX` *refers to the number beside the name of the candidate in the Main List. Thus* `INDEX` *cannot be a number lesser than the number beside the first candidate in the list or greater than the number beside the last candidate in the list.*
 
 </div>
@@ -562,7 +558,7 @@ If you are informed of a job opening and you would like to add it in *CANdidates
     add job n/Waiter c/Amelia’s Eating House p/98765432 e/ameliatjy@example.com 
     a/Amelia Street, Block 123, #01-01 pr/low t/MultipleLocations v/1
 
-:black_nib: To add a job with job title _Delivery Man_, company name _FedEx_, email _fedex<span>@</span>example.com_, address _Joo Koon_,phone _93333222_, priority _high_, job descriptions _delivery_ and _west_, with _1_ vacancy,
+:black_nib: To add a job with job title _Delivery Man_, company name _FedEx_, email _fedex<span>@</span>example.com_, address _Joo Koon_,phone _93333222_, priority _high_, job descriptions _delivery_ and _west_, with _10_ vacancies,
 
     add job n/Delivery Man c/FedEx e/fedex@example.com a/Joo Koon p/93333222 
     pr/high t/delivery t/west v/10
@@ -607,13 +603,9 @@ If you would like to edit the details of a particular job, you can use the comma
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Edits the job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :memo: *Existing values will be updated to the input values.*
 <br>
 :memo: *At least one of the optional fields must be provided.*
-<br>
-:memo: *The priority input can be specified as* `pr/low`, `pr/moderate` *or* `pr/moderate`.
 <br>
 :exclamation: *When editing the job description, the existing job descriptions will be cleared and replaced, 
 i.e editing of job descriptions is not cumulative even though there can be multiple job descriptions.*
@@ -762,8 +754,6 @@ To delete a particular job from the list, you can use the command below.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Deletes the job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :exclamation: *The specified job’s data will be cleared and this action is irreversible. 
 Please ensure you do not require the job’s data anymore before performing this command.*
 
@@ -808,8 +798,6 @@ Want to view all the information of a particular job ? *CANdidates* provides an 
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Displays all the information of a job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list.*
-<br>
 :exclamation: `INDEX` *refers to the number beside the name of a job in the Main List. Thus* `INDEX` *cannot be a number lesser than the number beside the first job in the list or greater than the number beside the last job in the list.*
 
 </div>
