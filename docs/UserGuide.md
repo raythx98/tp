@@ -65,7 +65,7 @@ This section explains all the symbols and fonts used in this document.
 
 Symbols/Font   | Explanation
 ---------------|------------------------------------
-`command`      | A string that is highlighted in grey indicates that the string is describing a typed command. The string could be a command format, a full command or part of a command.
+`command`      | Words that are highlighted in grey indicate that the words are describing a typed command. It could be a command format, a full command or part of a command.
 {*Description*}| Curly braces indicates a variable field that is described by *Description*. This is used to display results of commands that vary depending on a user's specific data. For example, the number of jobs in the list is variable and would depend on the user's data, hence this is represented as {*Number of jobs*} in this User Guide.
 :black_nib:    | An example of how to use the feature.
 :memo:         | Additional comments on the section or sub-section being explained.
@@ -90,7 +90,7 @@ You may refer back to this section whenever you need help understanding the GUI 
 
 
 ### 2.4 Understanding Input Fields
-Input fields are fields that you specify in your commands to tell *CANdidates* eaxctly what you wish to do, such as the
+Input fields are fields that you specify in your commands to tell *CANdidates* exactly what you wish to do, such as the
 information to store. Most input fields have specific requirements that have to be fulfilled or *CANdidates* will not be able to 
 understand you! The table below provides a summary of the requirements, but do not worry if you cannot
 remember them because *CANdidates* will notify you with an error message if any of these requirements 
@@ -106,22 +106,22 @@ Name of input field   | How to use them
 ----------------------|------------------------------------
 `NAME`                | Name of candidate being added or edited.<br/>:memo: *Names should contain only alphanumerical values or spaces.*
 `PHONE_NUMBER`        | Contact number of candidate or job listing being added or edited.
-`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#editing-a-candidate-edit-can) *feature to correct it.*
+`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-candidate-edit-can) *or* [edit job](#53-editing-a-job-edit-job) *feature to correct it.*
 `ADDRESS`             | Residential address of a candidate or work address of a job listing.
 `YEARS_OF_EXPERIENCE` | Years of experience of the candidate in the relevant job he/she applied for.<br/>:memo: *This field accepts up to 2 decimal points excluding trailing zeroes.*
-`DATE_OF_APPLICATION` | Date of job application submitted.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
-`EXPECTED_SALARY`     | Expected salary of a candidate in dollars.<br/>:memo: *This field accepts only whole numbers.*<br/>:bulb: *You can round up the figure to the next whole number if needed*
+`DATE_OF_APPLICATION` | Date of application submitted by candidate.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
+`EXPECTED_SALARY`     | Expected salary of a candidate in dollars.<br/>:memo: *This field accepts only whole numbers.*<br/>:bulb: *You can round up the figure to the next whole number if needed.*
 `IS_BLACKLISTED`      | Blacklist status of a candidate. You may use this to blacklist candidates that are unresponsive, have poor attitude, etc. <br/>:memo: *This field only accepts 2 specific values: true or false.*
-`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#editing-a-candidate-edit-can) *feature to correct it.*
+`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#43-editing-a-candidate-edit-can) *feature to correct it.*
 `JOB_TYPE`            | Job type tags for candidates so that it will be easier to find candidates applying for similar jobs. For example, you can tag them according to the job industry.<br/>:memo: *Job type should be one word, made up of up to 20 alphanumerical values with no spaces.*
 `JOB_TITLE`           | Title of a job position.<br/>:memo: *Job titles should contain only alphanumerical values or spaces.*
 `COMPANY_NAME`        | Name of the company for the job listing you are adding or editing.
 `VACANCY`             | Vacancy of a job listing i.e. Number of available slots open for hiring.<br/>:memo: *This field accepts only whole numbers from 0 to 99.*
 `PRIORITY`            | Priority of a job listing. Job listings may be of different urgency levels and this field is used to indicate the urgency.<br/>:memo: *This field only accepts 3 specific values: low, moderate or high.*
 `JOB_DESCRIPTION`     | Job description tags for job listings to specify additional descriptions. For example, you can specify requirements of the job such as age or skill level.<br/>:memo: *Job description should be one word, made up of up to 20 alphanumerical values with no spaces.*
-`FIELD_TO_SORT`       | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the field that the candidate or job list is sorted by..<br/>:memo: *This field only accepts specific values described in the [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) subsections.*
+`FIELD_TO_SORT`       | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the field that the candidate or job list is sorted by.<br/>:memo: *This field only accepts specific values described in the [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) subsections.*
 `ORDER`               | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the sort order.<br/>:memo: *This field only accepts 2 specific values: asc or desc.*
-`INDEX`               | Index number of the candidate or job displayed in the list.
+`INDEX`               | Index number of the candidate or job displayed in the list. <br/>:memo: *The index must be a positive integer 1, 2, 3, …​*
 
 ### 2.5 Understanding Command Format
 
@@ -130,7 +130,7 @@ This will help you to understand *CANdidates*' features better.
 
 * Command formats are highlighted in grey as mentioned in [Section 2.2. Understanding Symbols](#22-understanding-symbols)
 
-* Words in `UPPER_CASE` are the input fields which are supposed to be specified by you. -fields)<br>
+* Words in `UPPER_CASE` are the input fields which are supposed to be specified by you. <br>
   e.g. in `add n/NAME`, `NAME` is a input field which can be used as `add n/John Doe`.
 
 * Items in square brackets are optional.<br>
@@ -141,6 +141,8 @@ This will help you to understand *CANdidates*' features better.
 
 * Input fields can be in any order you want them to be.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
+  
+* If there are multiple inputs for the same input field, only the last one will be accepted. The only exception is the tag field for `add` and `edit` commands as there can be multiple tags.
 
 *:bulb: If you need help with the various input fields, refer to [Section 2.4. Understanding Input Fields](#24-understanding-input-fields).*
 
@@ -151,14 +153,14 @@ This will help you to understand *CANdidates*' features better.
 ## **3. Quick Start**
 Can’t wait to start using *CANdidates*? This section guides you through the starting up process, so that you can proceed on to use the application for your own needs!
 
-1. Download the latest Candidates.jar file from [here](https://github.com/AY2021S1-CS2103T-T17-3/tp/releases/tag/v1.3).
+1. Download the latest Candidates.jar file from [here](https://github.com/AY2021S1-CS2103T-T17-3/tp/releases/tag/v.1.4).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your *CANdidates*.
 
 1. Double-click the file to start the app. The GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
    ![Ui](images/Ui.png)
 
-1. Type the command in the *command box* and press *Enter* to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+1. Type the command in the *command box* and press *Enter* to execute it. e.g. typing **`help`** and pressing *Enter* will open the help window.<br>
    Some example commands you can try:
 
    * **`list can`** : Lists all candidates.
@@ -257,13 +259,9 @@ If you would like to edit the details of a particular candidate, you can use the
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Edits the candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed candidate list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :memo: *Existing values will be updated to the input values.*
 <br>
 :memo: *At least one of the optional fields must be provided.*
-<br>
-:memo: *The blacklist input can be specified as* `bl/true` *or* `bl/false`.
 <br>
 :exclamation: *When editing the job type, the existing job types will be cleared and replaced, i.e editing of job types is not cumulative even though there can be multiple job types.*
 <br>
@@ -322,12 +320,12 @@ the field you are interested in, along with the keyword you are looking for!
 <br>
 :memo: *For number fields (i.e. phone, years of experience and expected salary), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
 <br>
-:memo: *If there are multiple inputs for the same field, only the last one will be detected.*
+:memo: If you input multiple keywords for the tag field, candidates who have tags containing all the keywords will be displayed, e.g. `find can t/teacher tuition` will show a list of candidates with both the tags "teacher" and "tuition"
 <br>
 :bulb: *If you do not want to see blacklisted candidates in the list, you can use the command `find can bl/false`, the resulting list will show only non-blacklisted candidates.*
 <br>
 :bulb: *If you want to find candidates with no expected salary, you can use the command `sort can type/sal order/asc`
-(Refer to [Section 4.5, Sorting all candidates](#45-sorting-all-candidates-sort-can).
+(Refer to [Section 4.5, Sorting all candidates](#45-sorting-all-candidates-sort-can)).
 Candidates with no expected salary will be displayed at the top of the list.*
 
 </div>
@@ -375,8 +373,6 @@ You can view all the candidates in the order you wish to by typing in your desir
 <br>
 :memo: *The order input must be specified as either* `order/asc` *or* `order/desc` *depending on whether you wish the sorting to be done in an ascending or descending manner.*
 <br>
-:memo: *If you provide more than one* `FIELD_TO_SORT` *or* `ORDER` *, only the last one will be taken in as input e.g.* `sort can type/exp order/asc type/sal order/desc` *will sort the candidates according to expected salary in descending order.* 
-<br>
 
 </div>
 
@@ -422,8 +418,6 @@ To delete a particular candidate from the list, you can use the command below.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Deletes the candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :exclamation: *The specified candidate’s data will be cleared and this action is irreversible. 
 Please ensure you do not require the candidate’s data anymore before performing this command.*
 
@@ -468,8 +462,6 @@ Want to view all the information of a particular candidate? *CANdidates* provide
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Displays all the information of a candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list.*
-<br>
 :exclamation: `INDEX` *refers to the number beside the name of the candidate in the Main List. Thus* `INDEX` *cannot be a number lesser than the number beside the first candidate in the list or greater than the number beside the last candidate in the list.*
 
 </div>
@@ -566,7 +558,7 @@ If you are informed of a job opening and you would like to add it in *CANdidates
     add job n/Waiter c/Amelia’s Eating House p/98765432 e/ameliatjy@example.com 
     a/Amelia Street, Block 123, #01-01 pr/low t/MultipleLocations v/1
 
-:black_nib: To add a job with job title _Delivery Man_, company name _FedEx_, email _fedex<span>@</span>example.com_, address _Joo Koon_,phone _93333222_, priority _high_, job descriptions _delivery_ and _west_, with _1_ vacancy,
+:black_nib: To add a job with job title _Delivery Man_, company name _FedEx_, email _fedex<span>@</span>example.com_, address _Joo Koon_,phone _93333222_, priority _high_, job descriptions _delivery_ and _west_, with _10_ vacancies,
 
     add job n/Delivery Man c/FedEx e/fedex@example.com a/Joo Koon p/93333222 
     pr/high t/delivery t/west v/10
@@ -611,13 +603,9 @@ If you would like to edit the details of a particular job, you can use the comma
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Edits the job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :memo: *Existing values will be updated to the input values.*
 <br>
 :memo: *At least one of the optional fields must be provided.*
-<br>
-:memo: *The priority input can be specified as* `pr/low`, `pr/moderate` *or* `pr/moderate`.
 <br>
 :exclamation: *When editing the job description, the existing job descriptions will be cleared and replaced, 
 i.e editing of job descriptions is not cumulative even though there can be multiple job descriptions.*
@@ -677,7 +665,7 @@ simply by inserting keywords for the field(s) you are looking for!
 <br>
 :memo: *For number fields (i.e. phone and vacancy), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
 <br>
-:memo: *If there are multiple inputs for the same field, only the last one will be detected.*
+:memo: *If you input multiple keywords for the tag field, job listings which have tags containing all the keywords will be displayed, e.g. `find job t/cleaner fulltime` will show a list of jobs with the tags "cleaner" and "fulltime"*
 
 </div>
 
@@ -712,7 +700,7 @@ Step 3. The application will display jobs with all matching fields in the *main 
 
 ### 5.5 Sorting all jobs: `sort job`
 
-Have too many job listings and need a way to organise them? You can get *CANdidates* to help you do that by sorting them according to the priority or vacancies you have indicated for the job listings!
+Have too many job listings and need a way to organise them? You can get *CANdidates* to help you do that by sorting them according to these fields: job title, company name, priority or vacancies.
 
 **Format** `sort job type/FIELD_TO_SORT order/ORDER`
 
@@ -721,8 +709,6 @@ Have too many job listings and need a way to organise them? You can get *CANdida
 :exclamation: *Sorting will only apply to the current viewable list. e.g. Using* `sort job` *command after a* `find job` *command will only sort the list of job listings that were listed after the* `find job` *command.*
 <br>
 :memo: *The* `FIELD_TO_SORT` *can be either* `n`, `c`, `pr` *or* `v` *depending on whether you wish to sort the job listings by the job title, company name, priority level or number of vacancies respectively.*
-<br>
-:memo: *If you provide more than one* `FIELD_TO_SORT` *or* `ORDER` *, only the last one will be taken in as input e.g.* `sort job type/pr order/asc type/v order/desc` *will sort the job listings according to vacancies in descending order.* 
 <br>
 :memo: *The* `ORDER` *can be either* `asc` *or* `desc` *depending on whether you wish the sorting to be done in an ascending or descending manner.*
 
@@ -766,8 +752,6 @@ To delete a particular job from the list, you can use the command below.
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Deletes the job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :exclamation: *The specified job’s data will be cleared and this action is irreversible. 
 Please ensure you do not require the job’s data anymore before performing this command.*
 
@@ -812,8 +796,6 @@ Want to view all the information of a particular job ? *CANdidates* provides an 
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Displays all the information of a job at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed job list.*
-<br>
 :exclamation: `INDEX` *refers to the number beside the name of a job in the Main List. Thus* `INDEX` *cannot be a number lesser than the number beside the first job in the list or greater than the number beside the last job in the list.*
 
 </div>
@@ -909,7 +891,7 @@ Step 2. The *CANdidates* application will show the following message in the *res
 
 <br>
 
-Step 3. The help window will appear as a pop-up and you may click on the "copy URL" button. This URL (link) will direct you to *CANdidates*'s User Guide, which is this document!
+Step 3. The help window will appear as a pop-up and you may click on the "copy URL" button. This URL link will direct you to *CANdidates*'s User Guide, which is this document!
 
 ![help message 3](images/helpMessage2.png)
 

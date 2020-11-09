@@ -49,7 +49,7 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
 * **Project management**: 
   * In charge of looking after code quality and ensuring adherence to coding standards such as SLAP and KISS principles
   * Regularly reviewed pull requests to ensure good code quality and coding standards
-  * Actively used issue tracker to track, complete and assign tasks <br>
+  * Manage release of Candidates.jar v1.4 <br>
  
 * **Enhancements to existing features**: 
   * Modified AddressBookParser class of AB3 to be able to parse new commands of CANdidates
@@ -87,7 +87,7 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
       (Example Pull Requests [\#70](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/70), [\#298](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/298), 
       [\#304](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/304), [\#333](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/333)) 
   * Developer Guide:
-    * Updated the Design of the Model component including the UML diagram along with team mate [Amelia Tan](https://ay2021s1-cs2103t-t17-3.github.io/tp/team/ameliatjy.html) <br>
+    * Updated the Design of the Model component including the UML diagram along with team mate [Amelia Tan](https://ay2021s1-cs2103t-t17-3.github.io/tp/team/ameliatjy.html)
       (Pull requests [\#139](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/139))
     * Wrote documentation for implementation of Edit feature including sequence diagram
       (Pull requests [\#133](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/133))
