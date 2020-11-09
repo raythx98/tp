@@ -260,7 +260,7 @@ The following sequence diagram shows how the list operation works in the scenari
 
 ![ListSequenceDiagram](images/ListSequenceDiagram.png)
 
-:information_source: **Note:** The usage scenario and sequence diagram for the analogous `list can` operation are mostly similar, using its `ListCanCommand`, `UniquePersonList` and `PersonAddressBook` counterpart.
+:information_source: **Note:** The usage scenario and sequence diagram for the analogous `list job` operation are mostly similar, using its `ListCanCommand`, `UniquePersonList` and `PersonAddressBook` counterpart.
 
 <div style="page-break-after: always;"></div>
 
@@ -286,6 +286,8 @@ Step 3. A `PersonExperienceComparator` is created from parsing the command and a
 
 :information_source: **Note:** The usage scenario and sequence diagram for the analogous `sort job` operation are mostly similar, using its `SortJobCommand` ,`SortJobCommandParser`, `UniqueJobList` and `JobAddressBook` counterparts.
 
+<div style="page-break-after: always;"></div>
+
 ### 3.5 Find feature
 
 The Find feature has two variants, one for finding candidates `find can` and one for finding jobs `find job`. We will illustrate this feature using only the candidates variant here
@@ -307,6 +309,8 @@ Step 3. A `PersonNameContainsKeywordsPredicate` and `PersonExperienceContainsKey
 Step 4. In the `FindPersonCommand#execute`, the method `composePredicatesList(List<Predicate<Person>> predicates)` is invoked to produce a `Predicate<Person>` that represents a short-circuiting logical AND of all predicates in the list.
 `ModelManager#updateFilteredPersonList(Predicate<Person>)` is invoked and the `FilteredList` is filtered using the `Predicate<Person>` returned by the method `composePredicatesList`.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the find operation works in the scenario described above:
 
 ![FindSequenceDiagram](images/FindSequenceDiagram.png)
@@ -315,6 +319,8 @@ The following sequence diagram shows how the find operation works in the scenari
 
 The above only demonstrates finding candidates by their `Name` and `Experience`.
 The find operation also supports finding candidates via other fields such as `Email` and `Vacancy`.
+
+<div style="page-break-after: always;"></div>
 
 ### 3.6 View feature
 
@@ -335,6 +341,8 @@ The mechanism for both view features are faciliated by `ModelManager` and `MainW
 * `MainWindow#updateDetailedPersonPanel(Person person)` — Updates the view on the right panel of the GUI to contain information of the supplied person.
 * `MainWindow#updateDetailedJobPanel(Job job)` — Updates the view on the right panel of the GUI to contain information of the supplied job.
 
+<div style="page-break-after: always;"></div>
+
 Given below is an example usage scenario and how the `view can` mechanism behaves at each step.
 
 Step 1. The user launches the application for the first time. The `displayedPerson` will be initialised with `null`.
@@ -351,11 +359,15 @@ Step 6. A `CommandResult` object is created from `ViewPersonCommand#execute`. Th
 
 Step 7. Candidate at `Index` 1 is now displayed on the right panel.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the view operation works in the scenario described above:
 
 ![ViewSequenceDiagram](images/ViewSequenceDiagram.png)
 
 :information_source: **Note:** The usage scenario and sequence diagram for the analogous `view job` operation are mostly similar, using its `ViewJobCommand`, `ViewJobCommandParser`, `displayableJobs` and `displayedJob` counterparts.
+
+<div style="page-break-after: always;"></div>
 
 ## **4. Proposed Features**
 
@@ -371,6 +383,8 @@ The proposed undo/redo mechanism is facilitated by `VersionedPersonAddressBook`.
 
 These operations are exposed in the `Model` interface as `Model#commitPersonAddressBook()`, `Model#undoPersonAddressBook()` and `Model#redoPersonAddressBook()` respectively.
 
+<div style="page-break-after: always;"></div>
+
 Given below is an example usage scenario and how the undo/redo mechanism behaves at each step.
 
 Step 1. The user launches the application for the first time. The `VersionedPersonAddressBook` will be initialized with the initial person address book state, and the `currentStatePointer` pointing to that single person address book state.
@@ -380,6 +394,8 @@ Step 1. The user launches the application for the first time. The `VersionedPers
 Step 2. The user executes `delete can 5` command to delete the 5th person in the address book. The `delete can` command calls `Model#commitPersonAddressBook()`, causing the modified state of the person address book after the `delete can 5` command executes to be saved in the `personAddressBookStateList`, and the `currentStatePointer` is shifted to the newly inserted person address book state.
 
 ![UndoRedoState1](images/UndoRedoState1.png)
+
+<div style="page-break-after: always;"></div>
 
 Step 3. The user executes `add can n/David …​` to add a new person. The `add can` command also calls `Model#commitPersonAddressBook()`, causing another modified address book state to be saved into the `addressPersonBookStateList`.
 
@@ -397,6 +413,8 @@ Step 4. The user now decides that adding the person was a mistake, and decides t
 than attempting to perform the undo.
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 The following sequence diagram shows how the `undo can` operation works:
 
