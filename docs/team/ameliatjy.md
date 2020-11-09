@@ -12,12 +12,14 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
 
 Given below are my contributions to the project.
 
+<br>
+
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2021s1.github.io/tp-dashboard/#search=ameliatjy&sort=groupTitle&sortWithin=title&since=2020-08-14&timeframe=commit&mergegroup=&groupSelect=groupByAuthors&breakdown=false&tabOpen=false)
 
 <br>
 
 * **New Feature**: Job Listings (Pull requests [\#84](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/84) and [\#94](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/94))
-  * What it does: The feature enables a job listing to be represented in the *CANdidates* application.
+  * What it does: This feature enables a job listing to be represented in the *CANdidates* application.
   * Justification: The implementation of this feature is the preliminary modification of AB3 uniquely into *CANdidates*. It enables *CANdidates* to subsequently roll out features for job listings.
   * Highlights: This allows job recruiters to store job listings in *CANdidates* to keep track of all jobs with recruitment opportunities.
 
@@ -28,14 +30,14 @@ Given below are my contributions to the project.
 
 
 * **New Feature**: Find Candidate(s) (Pull requests [\#148](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/148), [\#153](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/153) and [\#167](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/167))
-  * What it does: Enables the user to find candidates with field(s) that contain(s) specified keywords.
+  * What it does: Enables the user to find candidates with field(s) that contain(s) user-specified keywords.
   * Justification: This feature improves the product significantly because a typical job recruiter has many candidates to handle, this feature will provide a convenient way for them to look for suitable candidates that fulfil a certain criteria and streamline their search.
   * Highlights: This enhancement was challenging as it requires chaining of various predicates, based on the fields specified by the user, to achieve the desired outcome. An in-depth understanding of the code base and its logic flow are required due to the numerous other classes involved.
 
 <br>
 
 * **New Feature**: Find Job Listing(s) (Pull requests [\#148](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/148), [\#153](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/153) and [\#167](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/167))
-  * What it does: Enables the user to find job listings with field(s) that contain(s) specified keywords.
+  * What it does: Enables the user to find job listings with field(s) that contain(s) user-specified keywords.
   * Justification: This feature improves the product significantly because a typical job recruiter has many job listings to handle. This feature will provide a convenient way for them to look for job listings with specific keywords, streamlining their search, thereby helping him/her fulfil the recruitment required in a timely manner.
   * Highlights: This enhancement was challenging as it requires chaining of various predicates, based on the fields specified by the user, to achieve the desired outcome. An in-depth understanding of the code base and its logic flow are required due to the numerous other classes involved.
 
@@ -51,7 +53,7 @@ Given below are my contributions to the project.
   * Created predicate package and related files to support Find command. (Pull requests
   [\#123](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/123) and
   [\#124](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/124))
-  * Enhanced the feature of finding of candidates and job listings by fields and wrote tests for them. (Pull request
+  * Enhanced the find command to enable searching keywords by fields and wrote tests for them. (Pull request
   [\#148](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/148))
 
 <br>
@@ -62,8 +64,8 @@ Given below are my contributions to the project.
 
 * **Project management**:
   * Defined tasks for each release, assigned them to team members and tracked the completion.
-  * Maintained the issue tracker, ensuring that issues were assigned and fulfilled timely.
-  * Schedule meetings for the team to address problems encountered and ensure meeting of deadlines.
+  * Maintained the issue tracker and ensured that issues were assigned and fulfilled timely.
+  * Scheduled meetings for the team to address problems encountered and ensure meeting of deadlines.
   * Keep track of and remove unnecessary files in project. (Pull requests
   [\#291](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/291) and
   [\#329](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/329))
@@ -80,16 +82,16 @@ Given below are my contributions to the project.
     * Wrote documentation for implementation of Find feature and its sequence diagram. (Pull requests
     [\#131](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/131) and
     [\#282](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/282))
-    * Update documentation and design of Model component including the UML diagrams along with teammate [Joon Jie](https://ay2021s1-cs2103t-t17-3.github.io/tp/team/breadpeanutbutter.html). (Pull request
+    * Updated documentation and design of Model component including the UML diagrams along with teammate [Joon Jie](https://ay2021s1-cs2103t-t17-3.github.io/tp/team/breadpeanutbutter.html). (Pull request
     [\#142](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/142))
-    * Identified use cases and maintained the section. (Pull requests
+    * Identified use cases and updated the sections to reflect new features that were developed. (Pull requests
     [\#234](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/234) and
     [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325))
-    * Update Manual Testing section with tests for Finding a candidate. (Pull request
+    * Updated Manual Testing section with tests for Finding a candidate. (Pull request
     [\#282](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/282))
     * Enhanced formatting of contents page and section headers. (Pull request
     [\#293](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/293))
-    * Update documentations regularly to ensure consistency in content and format. (Pull requests
+    * Updated documentations regularly to ensure consistency in content and format. (Pull requests
     [\#282](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/282),
     [\#294](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/294),
     [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325) and
@@ -108,7 +110,7 @@ Given below are my contributions to the project.
     [\#293](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/293))
     * Enhanced formatting of every feature's step by step documentation. (Pull request
     [\#317](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/317))
-    * Update documentations regularly to ensure consistency in content and format. (Pull requests
+    * Updated documentations regularly to ensure consistency in content and format. (Pull requests
     [\#116](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/116),
     [\#155](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/155),
     [\#170](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/170),
@@ -116,10 +118,13 @@ Given below are my contributions to the project.
     [\#235](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/235),
     [\#237](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/237),
     [\#294](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/294),
-    [\#308](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/308) and
-    [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325))
+    [\#308](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/308),
+    [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325) and
+    [\#339](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/339))
 
-<br>
+
+<div style="page-break-after: always;"></div>
+
 
 * **Community**:
   * Contributed to forum discussions by clarifying an issue for the team project. (Example:
