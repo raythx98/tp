@@ -47,7 +47,7 @@ how to navigate the document and what all the symbols, special fonts and command
 This User Guide is structured into 9 sections so that it is easy to read and navigate! <br>
 These are the 9 sections and a short explanation of what they are for:
 
-Section                                                     | What is it for
+   Section Name                                                    | What is it for
 ------------------------------------------------------------|------------------------------------
 [1. Introduction](#1-introduction)                          | An introduction to *CANdidates* and the amazing team behind it! 
 [2. Preface](#2-preface)                                    | A warm-up to get you familiar with this document. This is the section you are reading now. 
