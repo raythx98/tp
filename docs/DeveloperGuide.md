@@ -60,6 +60,8 @@ For example, the `Logic` component (see the class diagram given below) defines i
 
 ![Class Diagram of the Logic Component](images/LogicClassDiagram.png)
 
+<div style="page-break-after: always;"></div>
+
 **How the architecture components interact with each other**
 
 The *Sequence Diagram* below shows how the components interact with each other for the scenario where the user issues the command `delete can 1`.
@@ -67,6 +69,8 @@ The *Sequence Diagram* below shows how the components interact with each other f
 <img src="images/ArchitectureSequenceDiagram.png" width="600" />
 
 The sections below give more details of each component.
+
+<div style="page-break-after: always;"></div>
 
 ### 2.2 UI component
 
@@ -85,6 +89,8 @@ The `UI` component,
 * Listens for changes to `Model` data so that the UI can be updated with the modified data.
 * Responds to events raised by various commands which may result in changes to the UI.
 
+<div style="page-break-after: always;"></div>
+
 ### 2.3 Logic component
 
 ![Structure of the Logic Component](images/LogicClassDiagram.png)
@@ -98,12 +104,16 @@ The `UI` component,
 1. The result of the command execution is encapsulated as a `CommandResult` object which is passed back to the `Ui`.
 1. In addition, the `CommandResult` object can also instruct the `Ui` to perform certain actions, such as displaying help to the user.
 
+<div style="page-break-after: always;"></div>
+
 Given below is the Sequence Diagram for interactions within the `Logic` component for the `execute("delete can 1")` API call.
 
 ![Interactions Inside the Logic Component for the `delete can 1` Command](images/DeleteSequenceDiagram.png)
 
 <div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `DeletePersonCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
 </div>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.4 Model component
 
@@ -118,6 +128,8 @@ The `Model`,
 * exposes an unmodifiable `ObservableList<Person>` and an unmodifiable `ObservableList<Job>` that can be 'observed' e.g. the UI can be bound to these lists so that the UI automatically updates when the data in the lists change.
 * does not depend on any of the other three components. <br>
 
+<div style="page-break-after: always;"></div>
+
 <div markdown="span" class="alert alert-info">:information_source: **Note:** The Model class diagram shown above omits certain details due to space constraints, namely the classes in the Information Package 
                                                                              that Person and Job hold reference to. Instead, the omitted details have been extracted and are shown here: <br>
 
@@ -125,6 +137,7 @@ The `Model`,
 
 </div>
  
+<div style="page-break-after: always;"></div>
 
 ### 2.5 Storage component
 
@@ -145,6 +158,8 @@ Classes used by multiple components are in the `seedu.addressbook.commons` packa
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **3. Implementation**
 
 This section describes some noteworthy details on how certain features are implemented.
@@ -164,7 +179,7 @@ Additionally, it implements the following operations:
 
 Given below is an example usage scenario and how the `add can` mechanism behaves at each step. 
 
-Step 1. The user launches the application for the first time. The `FilteredList` will be initialised with the `UniquePersonList` from `personAddressBook` which contains a list of candidates.
+Step 1. The user launches the application for the first time. A `PersonAddressBook` object is initialised. The `FilteredList` will be initialised with the `UniquePersonList` from the `PersonAddressBook` object which contains a list of candidates.
 
 Step 2. The user executes `add can n/John p/98765432 e/john@ex.com a/John street exp/5 doa/15-10-20` to add a candidate with `Name` John, `Phone` 98765432, `Email` john@ex.com, `Address` John street, `Experience` 5 and `Date` 15-10-20.
 
@@ -172,13 +187,15 @@ Step 3. The method `AddressBookParser#parseCommand` is invoked to determine the 
 
 Step 4. `ModelManager#hasJob(Person person)` is invoked to check whether the same person exist in the FilteredList of persons using the `equals` method of `Person`. If a duplicate person exists, a `CommandException` is thrown. Otherwise, the method `ModelManager#addPerson(Person person)` is invoked to add the person into the FilteredList of persons.
 
-Step 5. The `savePersonAddressBook` method of `StorageManager`, which is a subclass of `Storage`, is invoked to update the new person addition in the `personAddressBook` and saved. 
+<div style="page-break-after: always;"></div>
 
 The following sequence diagram shows how the `add can` operation works in the scenario described above:
 
 ![AddSequenceDiagram](images/AddSequenceDiagram.png)
 
 :information_source: **Note:** The usage scenario and sequence diagram for the analogous `add job` operation are mostly similar, using its `AddJobCommandParser`, `AddJobCommand`, `hasJob`, `addJob`, `saveJobAddressBook` and `JobAddressBook` counterparts.
+
+<div style="page-break-after: always;"></div>
 
 ### 3.2 Edit feature
 
@@ -194,7 +211,7 @@ Additionally, it implements the following operations:
 
 Given below is an example usage scenario and how the edit mechanism behaves at each step.
 
-Step 1. The user launches the application for the first time. The `FilteredList` will be initialised with the `UniquePersonList` from `personAddressBook` which contains a list of candidates.
+Step 1. The user launches the application for the first time. A `PersonAddressBook` object is initialised. The `FilteredList` will be initialised with the `UniquePersonList` from the `PersonAddressBook` object which contains a list of candidates.
 
 Step 2. The user executes `edit can 2 n/Rob Mi` to change the `Name` of the candidate at `Index` 2 to Rob Mi. 
 
@@ -205,16 +222,20 @@ If the command format is invalid, `EditPersonCommandParser` throws an error.
 Step 4. A `EditPersonDescriptor` object, which is an inner class of `EditPersonCommand`, is created from parsing the command and is used
 to store the details to edit the candidate with. In this case, it stores the `Name` Rob Mi.
 
-Step 5. A `EditPersonCommand` object is also created from parsing the comamand. In the `EditPersonCommand#execute` method, 
+Step 5. A `EditPersonCommand` object is also created from parsing the command. In the `EditPersonCommand#execute` method, 
 if the candidate `Index` provided by the user is invalid, an error is thrown. 
 Otherwise, the method `ModelManager#setPerson()` is invoked to replace the old candidate with the newly edited candidate. 
- Then, `ModelManager#updateFilteredPersonList()` is invoked and the `FilteredList` and `personAddressBook` is updated and saved.
+ Then, `ModelManager#updateFilteredPersonList()` is invoked and the `FilteredList` and `PersonAddressBook` object is updated and saved.
+
+<div style="page-break-after: always;"></div>
 
 The following sequence diagram shows how the edit operation works in the scenario described above:
 
 ![EditSequenceDiagram](images/EditSequenceDiagram.png)
 
 :information_source: **Note:** The usage scenario and sequence diagram for the analogous `edit job` operation are mostly similar, using its `EditJobDescriptor`, `EditJobCommand`, `EditJobCommandParser`, `UniqueJobList` and `JobAddressBook` counterparts.
+
+<div style="page-break-after: always;"></div>
 
 ### 3.3 List feature
 
@@ -228,7 +249,7 @@ Additionally, it implements the following operations:
 
 Given below is an example usage scenario and how the list mechanism behaves at each step.
 
-Step 1. The user launches the application for the first time. The `FilteredList` will be initialised with the `UniquePersonList` from `personAddressBook` which contains a list of candidates.
+Step 1. The user launches the application for the first time. A `PersonAddressBook` object is initialised. The `FilteredList` will be initialised with the `UniquePersonList` from the `PersonAddressBook` object which contains a list of candidates.
 
 Step 2. The user executes `list can` to list all candidates.
 
@@ -240,6 +261,8 @@ The following sequence diagram shows how the list operation works in the scenari
 ![ListSequenceDiagram](images/ListSequenceDiagram.png)
 
 :information_source: **Note:** The usage scenario and sequence diagram for the analogous `list can` operation are mostly similar, using its `ListCanCommand`, `UniquePersonList` and `PersonAddressBook` counterpart.
+
+<div style="page-break-after: always;"></div>
 
 ### 3.4 Sort feature
 
@@ -253,11 +276,11 @@ Additionally, it implements the following operations:
 
 Given below is an example usage scenario and how the sort mechanism behaves at each step.
 
-Step 1. The user launches the application for the first time. The `SortedList` will be initialised with the `UniquePersonList` from `personAddressBook` which contains a list of candidates.
+Step 1. The user launches the application for the first time. A `PersonAddressBook` object is initialised. The `SortedList` will be initialised with the `UniquePersonList` from the `PersonAddressBook` object which contains a list of candidates.
 
 Step 2. The user executes `sort can type/exp order/asc` to sort the candidates by their `Experience` in ascending order. If the `type` of comparator field i.e. `exp` or the `order` i.e. `asc` is missing, `SortPersonCommandParser` throws an error message.
 
-Step 3. A `PersonExperienceComparator` is created from parsing the command and a `SortPersonCommand` object is created. In the `SortPersonCommand#execute` the method `ModelManager#updateSortedPersonList(PersonExperienceComparator)` is invoked and the `SortedList` is sorted using the `PersonExperienceComparator`. The `UniquePersonList` in `personAddressBook` is then set to be the `SortedList`.
+Step 3. A `PersonExperienceComparator` is created from parsing the command and a `SortPersonCommand` object is created. In the `SortPersonCommand#execute` the method `ModelManager#updateSortedPersonList(PersonExperienceComparator)` is invoked and the `SortedList` is sorted using the `PersonExperienceComparator`. The `UniquePersonList` in the `PersonAddressBook` object is then set to be the `SortedList`.
 
 ![SortPersonSequenceDiagram](images/SortSequenceDiagramC.png )
 
@@ -275,7 +298,7 @@ Additionally, it implements the following operations:
 
 Given below is an example usage scenario and how the find mechanism behaves at each step.
 
-Step 1. The user launches the application for the first time. The `FilteredList` will be initialised with the `UniquePersonList` from `personAddressBook` which contains a list of candidates.
+Step 1. The user launches the application for the first time. A `PersonAddressBook` object is initialised. The `FilteredList` will be initialised with the `UniquePersonList` from the `PersonAddressBook` object which contains a list of candidates.
 
 Step 2. The user executes `find can n/Alex exp/0` to find candidates with the `Name` Alex and `Experience` 5.
 
