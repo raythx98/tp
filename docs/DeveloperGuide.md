@@ -185,9 +185,9 @@ Step 2. The user executes `add can n/John p/98765432 e/john@ex.com a/John street
 
 Step 3. The method `AddressBookParser#parseCommand` is invoked to determine the command type. Since this is an `add can` command, the `AddPersonCommandParser#parse` is then called to parse the arguments. If the input command has an invalid format, `AddPersonCommandParser` throws a `ParseException`, if not, a `AddPersonCommand` object is created.
 
-Step 4. `ModelManager#hasJob(Person person)` is invoked to check whether the same person exist in the FilteredList of persons using the `equals` method of `Person`. If a duplicate person exists, a `CommandException` is thrown. Otherwise, the method `ModelManager#addPerson(Person person)` is invoked to add the person into the FilteredList of persons.
-
 <div style="page-break-after: always;"></div>
+
+Step 4. `ModelManager#hasJob(Person person)` is invoked to check whether the same person exist in the FilteredList of persons using the `equals` method of `Person`. If a duplicate person exists, a `CommandException` is thrown. Otherwise, the method `ModelManager#addPerson(Person person)` is invoked to add the person into the FilteredList of persons.
 
 The following sequence diagram shows how the `add can` operation works in the scenario described above:
 
@@ -256,6 +256,8 @@ Step 2. The user executes `list can` to list all candidates.
 Step 3. A `ListPersonCommand` object is created from parsing the command. In the `ListPersonCommand#execute` the method `ModelManager#updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS)` is invoked 
 and the `FilteredList` shows all candidates in the list as indicated by the given predicate.
 
+<div style="page-break-after: always;"></div>
+
 The following sequence diagram shows how the list operation works in the scenario described above:
 
 ![ListSequenceDiagram](images/ListSequenceDiagram.png)
@@ -281,6 +283,8 @@ Step 1. The user launches the application for the first time. A `PersonAddressBo
 Step 2. The user executes `sort can type/exp order/asc` to sort the candidates by their `Experience` in ascending order. If the `type` of comparator field i.e. `exp` or the `order` i.e. `asc` is missing, `SortPersonCommandParser` throws an error message.
 
 Step 3. A `PersonExperienceComparator` is created from parsing the command and a `SortPersonCommand` object is created. In the `SortPersonCommand#execute` the method `ModelManager#updateSortedPersonList(PersonExperienceComparator)` is invoked and the `SortedList` is sorted using the `PersonExperienceComparator`. The `UniquePersonList` in the `PersonAddressBook` object is then set to be the `SortedList`.
+
+<div style="page-break-after: always;"></div>
 
 ![SortPersonSequenceDiagram](images/SortSequenceDiagramC.png )
 
@@ -479,6 +483,8 @@ The following activity diagram summarizes what happens when a user executes a ne
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## **6. Appendix: Requirements**
 
 ### 6.1 Product scope
@@ -539,6 +545,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `*`      | efficient person                           | be able to perform mass operations like deleting multiple entries at once             |                                                                                            |
 | `*`      | job recruiter                              | have a way to filter job applicants by their gender                                   |                                                                                            |
 
+<div style="page-break-after: always;"></div>
+
 ### 6.3 Use cases
 
 (For all use cases below, the **System** is the `CANdidates` and the **Actor** is the `user`, unless specified otherwise)
@@ -585,6 +593,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
+<div style="page-break-after: always;"></div>
 
 #### 6.3.3 Use case: UC03 - Delete a candidate
 
@@ -637,6 +646,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
+<div style="page-break-after: always;"></div>
 
 #### 6.3.5 Use case: UC05 - Clear all candidates
 
@@ -672,6 +682,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
+<div style="page-break-after: always;"></div>
 
 #### 6.3.7 Use case: UC07 - Sort candidates
 
@@ -721,6 +732,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     * 2a1. CANdidates shows an error message.
     
       Use case ends.
+      
+<div style="page-break-after: always;"></div>
     
 #### 6.3.9 Use case: UC09 - Add a job
 
@@ -764,6 +777,7 @@ Similar to UC08, except user will request to view a job and CANdidates will disp
 
     Use case ends.
 
+<div style="page-break-after: always;"></div>
 
 ### 6.4 Non-Functional Requirements
 
@@ -789,6 +803,8 @@ Similar to UC08, except user will request to view a job and CANdidates will disp
 * **Hard-to-test features**: Features that heavily depend on remote APIs, audio-related features,
 as well as features requiring creation of user accounts etc.
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **7. Appendix: Instructions for manual testing**
 
@@ -820,6 +836,8 @@ testers are expected to do more *exploratory* testing.
    1. Double-click the jar file <br>
    Expected: Shows the GUI with candidates and jobs loaded from the json data files. The window size should be fixed and non-adjustable.
    
+<div style="page-break-after: always;"></div>
+
 ### 7.2 Adding a candidate
 
 1. Adding a candidate while on the candidates tab and all candidates are displayed 
@@ -837,7 +855,9 @@ testers are expected to do more *exploratory* testing.
        
     1. Other incorrect add commands to try include omitting other compulsory fields. <br>
        Expected: Similar to previous  
-     
+
+<div style="page-break-after: always;"></div>
+
 ### 7.3 Adding a job
 
 1. Adding a job while on the job listings tab and all jobs are displayed 
@@ -870,6 +890,8 @@ testers are expected to do more *exploratory* testing.
 :information_source: **Note:** Listing jobs can be tested in the same way but with its analogous commands while on the candidates tab.
    
 </div>
+
+<div style="page-break-after: always;"></div>
         
 ### 7.5 Editing a candidate
 
@@ -910,7 +932,9 @@ testers are expected to do more *exploratory* testing.
    
    1. Test case (Same job title and company name): `add job n/Delivery Man c/FedEx e/anotherfedex@example.com a/Jurong West p/84378293` <br>
       Expected: No new job listing added. Duplicate job error shown in the status message.
-      
+   
+<div style="page-break-after: always;"></div>
+   
 ### 7.8 Deleting a candidate
 
 1. Deleting a candidate while on the candidates tab and all candidates are displayed
@@ -945,6 +969,8 @@ testers are expected to do more *exploratory* testing.
 :information_source: **Note:** Deleting jobs can be tested in the same way but with its analogous commands.
 
 </div>
+
+<div style="page-break-after: always;"></div>
        
 ### 7.9 Clearing all candidates
 
@@ -974,6 +1000,8 @@ testers are expected to do more *exploratory* testing.
 :information_source: **Note:** Clearing all jobs can be tested in the same way but with its analogous commands.
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 ### 7.10 Finding a candidate
 
@@ -1010,6 +1038,8 @@ testers are expected to do more *exploratory* testing.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ### 7.11 Sorting all candidates
 
 1. Sorting all candidates while on the candidates tab and all candidates are displayed
@@ -1044,6 +1074,8 @@ testers are expected to do more *exploratory* testing.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 ### 7.12 Viewing a candidate
 
 1. Viewing a candidate with no candidates in the candidates list.
@@ -1064,6 +1096,8 @@ testers are expected to do more *exploratory* testing.
 :information_source: **Note:** Viewing jobs can be tested in the same way but with its analogous commands.
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 ### 7.13 Saving data
 
