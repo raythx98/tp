@@ -617,6 +617,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case ends.
 
+<div style="page-break-after: always;"></div>
 
 #### 6.3.4 Use case: UC04 - Edit a candidate
 
@@ -711,6 +712,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
     * 2b1. CANdidates shows an error message.
 
       Use case ends.
+      
+<div style="page-break-after: always;"></div>
     
 #### 6.3.8 Use case: UC08 - View a Candidate
 
@@ -767,6 +770,8 @@ Similar to UC07, except user will request to sort jobs.
 
 Similar to UC08, except user will request to view a job and CANdidates will display information of the job on the right panel instead.
 
+<div style="page-break-after: always;"></div>
+
 #### 6.3.17 Use case: UC17 - Requesting for help
 
 **MSS**
@@ -776,8 +781,6 @@ Similar to UC08, except user will request to view a job and CANdidates will disp
 3.  User copies the link and closes the window
 
     Use case ends.
-
-<div style="page-break-after: always;"></div>
 
 ### 6.4 Non-Functional Requirements
 
@@ -794,6 +797,8 @@ Similar to UC08, except user will request to view a job and CANdidates will disp
 1.  Should be able to work without an internet connection.
 1.  Any reused code should be used with appropriate credit given.
 1.  Should not include copyrighted audio or graphics.
+
+<div style="page-break-after: always;"></div>
 
 ### 6.5 Glossary
 
