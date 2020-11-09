@@ -151,7 +151,7 @@ This will help you to understand *CANdidates*' features better.
 ## **3. Quick Start**
 Can’t wait to start using *CANdidates*? This section guides you through the starting up process, so that you can proceed on to use the application for your own needs!
 
-1. Download the latest Candidates.jar file from [here](https://github.com/AY2021S1-CS2103T-T17-3/tp/releases/tag/v1.3).
+1. Download the latest Candidates.jar file from [here](https://github.com/AY2021S1-CS2103T-T17-3/tp/releases/tag/v.1.4).
 
 1. Copy the file to the folder you want to use as the _home folder_ for your *CANdidates*.
 
