@@ -7,7 +7,6 @@ title: Lee Joon Jie's Project Portfolio Page
 
 CANdidates is a powerful contact management desktop App optimised for job recruiters to manage job applicants and job listings.
 The user interacts with it using a CLI, and it has a GUI created with JavaFX. It is written in Java, and has about 25 kLoC.
-
 ### Given below are my contributions to the project
 
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2021s1.github.io/tp-dashboard/#breakdown=true&search=breadpeanutbutter&sort=groupTitle&sortWithin=title&since=2020-08-14&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other&tabOpen=false)
@@ -69,9 +68,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
   * Created several test classes used to test new Information fields and new commands, improved code coverage by %7.80 in one PR
     (Example Pull requests [\#97](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/97), [\#119](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/119), 
     [\#121](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/121))
-  * Updated old tests to include new features
-    (Example Pull requests [\#119](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/119), [\#121](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/121), 
-    [\#286](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/286))
 
 <br>
 <div style="page-break-after: always;"></div>
