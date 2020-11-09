@@ -122,6 +122,7 @@ Given below are my contributions to the project.
     [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325) and
     [\#339](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/339))
 
+<br>
 
 <div style="page-break-after: always;"></div>
 
