@@ -23,6 +23,8 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
 
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2021s1.github.io/tp-dashboard/#search=raythx98&sort=groupTitle&sortWithin=title&since=2020-08-14&timeframe=commit&mergegroup=&groupSelect=groupByAuthors&breakdown=false&tabOpen=false)
 
+<div style="page-break-after: always;"></div>
+
 * **Project management**:
   * Managed release `v1.2`, `v1.2.1`, `v1.3` (3 releases) on GitHub.
   * Ensured that project deliverables are done on time and in the right format.
