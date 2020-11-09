@@ -106,13 +106,13 @@ Name of input field   | How to use them
 ----------------------|------------------------------------
 `NAME`                | Name of candidate being added or edited.<br/>:memo: *Names should contain only alphanumerical values or spaces.*
 `PHONE_NUMBER`        | Contact number of candidate or job listing being added or edited.
-`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-candidate-edit can) *or* [edit job](#53-editing-a-job-edit job)*feature to correct it.*
+`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-job-edit-can) *or* [edit job](#53-editing-a-job-edit-job)*feature to correct it.*
 `ADDRESS`             | Residential address of a candidate or work address of a job listing.
 `YEARS_OF_EXPERIENCE` | Years of experience of the candidate in the relevant job he/she applied for.<br/>:memo: *This field accepts up to 2 decimal points excluding trailing zeroes.*
-`DATE_OF_APPLICATION` | Date of job application submitted.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
+`DATE_OF_APPLICATION` | Date of application submitted by candidate.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
 `EXPECTED_SALARY`     | Expected salary of a candidate in dollars.<br/>:memo: *This field accepts only whole numbers.*<br/>:bulb: *You can round up the figure to the next whole number if needed.*
 `IS_BLACKLISTED`      | Blacklist status of a candidate. You may use this to blacklist candidates that are unresponsive, have poor attitude, etc. <br/>:memo: *This field only accepts 2 specific values: true or false.*
-`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#43-editing-a-candidate-edit can) *feature to correct it.*
+`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#43-editing-a-candidate-edit-can) *feature to correct it.*
 `JOB_TYPE`            | Job type tags for candidates so that it will be easier to find candidates applying for similar jobs. For example, you can tag them according to the job industry.<br/>:memo: *Job type should be one word, made up of up to 20 alphanumerical values with no spaces.*
 `JOB_TITLE`           | Title of a job position.<br/>:memo: *Job titles should contain only alphanumerical values or spaces.*
 `COMPANY_NAME`        | Name of the company for the job listing you are adding or editing.
@@ -121,7 +121,7 @@ Name of input field   | How to use them
 `JOB_DESCRIPTION`     | Job description tags for job listings to specify additional descriptions. For example, you can specify requirements of the job such as age or skill level.<br/>:memo: *Job description should be one word, made up of up to 20 alphanumerical values with no spaces.*
 `FIELD_TO_SORT`       | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the field that the candidate or job list is sorted by.<br/>:memo: *This field only accepts specific values described in the [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) subsections.*
 `ORDER`               | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the sort order.<br/>:memo: *This field only accepts 2 specific values: asc or desc.*
-`INDEX`               | Index number of the candidate or job displayed in the list.
+`INDEX`               | Index number of the candidate or job displayed in the list. <br/>:memo: *The index must be a positive integer 1, 2, 3, …​*
 
 ### 2.5 Understanding Command Format
 
@@ -257,13 +257,9 @@ If you would like to edit the details of a particular candidate, you can use the
 
 <div markdown="span" class="alert alert-primary">
 
-:memo: *Edits the candidate at the specified* `INDEX`. *The* `INDEX` *refers to the index number shown in the displayed candidate list. The* `INDEX` *must be a positive integer 1, 2, 3, …​*
-<br>
 :memo: *Existing values will be updated to the input values.*
 <br>
 :memo: *At least one of the optional fields must be provided.*
-<br>
-:memo: *The blacklist input can be specified as* `bl/true` *or* `bl/false`.
 <br>
 :exclamation: *When editing the job type, the existing job types will be cleared and replaced, i.e editing of job types is not cumulative even though there can be multiple job types.*
 <br>
@@ -327,7 +323,7 @@ the field you are interested in, along with the keyword you are looking for!
 :bulb: *If you do not want to see blacklisted candidates in the list, you can use the command `find can bl/false`, the resulting list will show only non-blacklisted candidates.*
 <br>
 :bulb: *If you want to find candidates with no expected salary, you can use the command `sort can type/sal order/asc`
-(Refer to [Section 4.5, Sorting all candidates](#45-sorting-all-candidates-sort-can).
+(Refer to [Section 4.5, Sorting all candidates](#45-sorting-all-candidates-sort-can)).
 Candidates with no expected salary will be displayed at the top of the list.*
 
 </div>
