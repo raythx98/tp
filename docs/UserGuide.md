@@ -90,7 +90,7 @@ You may refer back to this section whenever you need help understanding the GUI 
 
 
 ### 2.4 Understanding Input Fields
-Input fields are fields that you specify in your commands to tell *CANdidates* eaxctly what you wish to do, such as the
+Input fields are fields that you specify in your commands to tell *CANdidates* exactly what you wish to do, such as the
 information to store. Most input fields have specific requirements that have to be fulfilled or *CANdidates* will not be able to 
 understand you! The table below provides a summary of the requirements, but do not worry if you cannot
 remember them because *CANdidates* will notify you with an error message if any of these requirements 
@@ -106,20 +106,20 @@ Name of input field   | How to use them
 ----------------------|------------------------------------
 `NAME`                | Name of candidate being added or edited.<br/>:memo: *Names should contain only alphanumerical values or spaces.*
 `PHONE_NUMBER`        | Contact number of candidate or job listing being added or edited.
-`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#editing-a-candidate-edit-can) *feature to correct it.*
+`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-candidate-edit can) *or* [edit job](#53-editing-a-job-edit job)*feature to correct it.*
 `ADDRESS`             | Residential address of a candidate or work address of a job listing.
 `YEARS_OF_EXPERIENCE` | Years of experience of the candidate in the relevant job he/she applied for.<br/>:memo: *This field accepts up to 2 decimal points excluding trailing zeroes.*
 `DATE_OF_APPLICATION` | Date of job application submitted.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
-`EXPECTED_SALARY`     | Expected salary of a candidate in dollars.<br/>:memo: *This field accepts only whole numbers.*<br/>:bulb: *You can round up the figure to the next whole number if needed*
+`EXPECTED_SALARY`     | Expected salary of a candidate in dollars.<br/>:memo: *This field accepts only whole numbers.*<br/>:bulb: *You can round up the figure to the next whole number if needed.*
 `IS_BLACKLISTED`      | Blacklist status of a candidate. You may use this to blacklist candidates that are unresponsive, have poor attitude, etc. <br/>:memo: *This field only accepts 2 specific values: true or false.*
-`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#editing-a-candidate-edit-can) *feature to correct it.*
+`PROFILE_LINK`        | URL link to candidate profile or portfolio (e.g. LinkedIn or GitHub, etc.) to provide convenience for you to refer to their profile later on. <br/>:exclamation: *CANdidates does not check that the URL address exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous URL address, use the* [edit can](#43-editing-a-candidate-edit can) *feature to correct it.*
 `JOB_TYPE`            | Job type tags for candidates so that it will be easier to find candidates applying for similar jobs. For example, you can tag them according to the job industry.<br/>:memo: *Job type should be one word, made up of up to 20 alphanumerical values with no spaces.*
 `JOB_TITLE`           | Title of a job position.<br/>:memo: *Job titles should contain only alphanumerical values or spaces.*
 `COMPANY_NAME`        | Name of the company for the job listing you are adding or editing.
 `VACANCY`             | Vacancy of a job listing i.e. Number of available slots open for hiring.<br/>:memo: *This field accepts only whole numbers from 0 to 99.*
 `PRIORITY`            | Priority of a job listing. Job listings may be of different urgency levels and this field is used to indicate the urgency.<br/>:memo: *This field only accepts 3 specific values: low, moderate or high.*
 `JOB_DESCRIPTION`     | Job description tags for job listings to specify additional descriptions. For example, you can specify requirements of the job such as age or skill level.<br/>:memo: *Job description should be one word, made up of up to 20 alphanumerical values with no spaces.*
-`FIELD_TO_SORT`       | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the field that the candidate or job list is sorted by..<br/>:memo: *This field only accepts specific values described in the [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) subsections.*
+`FIELD_TO_SORT`       | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the field that the candidate or job list is sorted by.<br/>:memo: *This field only accepts specific values described in the [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) subsections.*
 `ORDER`               | Input field that is exclusive for [sort can](#45-sorting-all-candidates-sort-can) and [sort job](#55-sorting-all-jobs-sort-job) commands, to specify the sort order.<br/>:memo: *This field only accepts 2 specific values: asc or desc.*
 `INDEX`               | Index number of the candidate or job displayed in the list.
 
@@ -130,7 +130,7 @@ This will help you to understand *CANdidates*' features better.
 
 * Command formats are highlighted in grey as mentioned in [Section 2.2. Understanding Symbols](#22-understanding-symbols)
 
-* Words in `UPPER_CASE` are the input fields which are supposed to be specified by you. -fields)<br>
+* Words in `UPPER_CASE` are the input fields which are supposed to be specified by you. <br>
   e.g. in `add n/NAME`, `NAME` is a input field which can be used as `add n/John Doe`.
 
 * Items in square brackets are optional.<br>
