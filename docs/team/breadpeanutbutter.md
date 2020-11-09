@@ -22,15 +22,16 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
     It is an optional input field for candidates since not all candidates have an online profile page. Internally, it is represented as a UrlLink object.
   * Justification: This Information field allows job recruiters to have easy access to the URL link to profiles and resumes of candidates. 
   * Highlight: This field was the first information field that was optional for candidates and also have no default value. It was a challenge to
-    implement this field as I had to consider how to make it reflect no value while adhering to good coding practices. I wanted to avoid using
+    implement as I had to consider how to make it reflect no value while adhering to good coding practices. I wanted to avoid using
     null values for this as using nulls can be "overwhelmingly likely to cause errors" as said by Brian Goetz, Java's language architect. 
     Hence, I decided to utilise Java's Optional class to contain UrlLink in an Optional object for safer results. 
   * Hightlight: It was also a challenge to validate the format of URL links as there are numerous possibilities. I decided to use a third party library, 
-    Apache Commons Validator, to validate the format for this. <br>
+    Apache Commons Validator, to validate the format for this.
     
+<div style="page-break-after: always;"></div>   
+
 * **New Feature: Salary Information field**           
-  * What it is for: A field used to represent the expected salary of a candidate. It is an optional input field for candidates. 
-    Internally, it is represented as a Salary object.
+  * What it is for: A field used to represent the expected salary of a candidate. Internally, it is represented as a Salary object.
   * Justification:  This Information field allows job recruiters to store and keep track of the expected salary of candidates. This is an important field
     as recruiters can use this information to match candidates with suitable jobs. This field is also useful when used as input for the Sort and Find features.
   * Highlight: Similar to URLLink, Salary is also represented as an Optional object in candidates. <br>
