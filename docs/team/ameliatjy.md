@@ -97,7 +97,7 @@ Given below are my contributions to the project.
     [\#325](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/325) and
     [\#329](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/329)) <br>
   * User Guide:
-    * Wrote documentation for the Introduction, Authors, Preface and Understanding Symbols. (Pull request
+    * Wrote documentation for the sections Introduction, Authors, Preface and Understanding Symbols. (Pull request
     [\#155](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/155))
     * Wrote documentation for the features Finding a candidate: `find can` and Finding a job: `find job`. (Pull request
     [\#155](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/155))
