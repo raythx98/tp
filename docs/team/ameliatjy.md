@@ -24,8 +24,6 @@ Given below are my contributions to the project.
   * Justification: This feature improves the product significantly because a typical job recruiter has many candidates to handle, this feature will provide a convenient way for them to look for suitable candidates that fulfil a certain criteria and streamline their search.
   * Highlights: This enhancement was challenging as it requires chaining of various predicates, based on the fields specified by the user, to achieve the desired outcome. An in-depth understanding of the code base and its logic flow are required due to the numerous other classes involved.
 
-<div style="page-break-after: always;"></div>
-
 * **New Feature**: Find Job Listing(s) (Pull requests [\#148](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/148), [\#153](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/153) and [\#167](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/167))
   * What it does: Enables the user to find job listings with field(s) that contain(s) keywords.
   * Justification: This feature improves the product significantly because a typical job recruiter has many job listings to handle. This feature will provide a convenient way for them to look for job listings with specific keywords, streamlining their search, thereby helping him/her fulfil the recruitment required in a timely manner.
@@ -41,6 +39,8 @@ Given below are my contributions to the project.
   * Enhanced the find command to enable searching keywords by fields and wrote tests for them. (Pull request
   [\#148](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/148))
 
+<div style="page-break-after: always;"></div>
+
 * **Project management**:
   * Defined tasks for each release, assigned them to team members and tracked completion.
   * Maintained the issue tracker and ensured that issues were assigned and fulfilled timely.
@@ -48,8 +48,6 @@ Given below are my contributions to the project.
   * Keep track of and remove unnecessary files in project. (Pull requests
   [\#291](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/291) and
   [\#329](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/329))
-
-<div style="page-break-after: always;"></div>
 
 * **Documentation**:
   * About Us:
