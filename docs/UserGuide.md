@@ -141,6 +141,8 @@ This will help you to understand *CANdidates*' features better.
 
 * Input fields can be in any order you want them to be.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
+  
+* If there are multiple inputs for the same input field, only the last one will be accepted.
 
 *:bulb: If you need help with the various input fields, refer to [Section 2.4. Understanding Input Fields](#24-understanding-input-fields).*
 
@@ -158,7 +160,7 @@ Can’t wait to start using *CANdidates*? This section guides you through the st
 1. Double-click the file to start the app. The GUI similar to the below should appear in a few seconds. Note how the app contains some sample data.<br>
    ![Ui](images/Ui.png)
 
-1. Type the command in the *command box* and press *Enter* to execute it. e.g. typing **`help`** and pressing Enter will open the help window.<br>
+1. Type the command in the *command box* and press *Enter* to execute it. e.g. typing **`help`** and pressing *Enter* will open the help window.<br>
    Some example commands you can try:
 
    * **`list can`** : Lists all candidates.
@@ -317,8 +319,6 @@ the field you are interested in, along with the keyword you are looking for!
 :memo: *The order of the keywords does not matter, e.g. Doe John will match John Doe*
 <br>
 :memo: *For number fields (i.e. phone, years of experience and expected salary), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
-<br>
-:memo: *If there are multiple inputs for the same field, only the last one will be detected.*
 <br>
 :bulb: *If you do not want to see blacklisted candidates in the list, you can use the command `find can bl/false`, the resulting list will show only non-blacklisted candidates.*
 <br>
@@ -664,8 +664,6 @@ simply by inserting keywords for the field(s) you are looking for!
 :memo: *The order of the keywords does not matter, e.g. King Burger will match Burger King*
 <br>
 :memo: *For number fields (i.e. phone and vacancy), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
-<br>
-:memo: *If there are multiple inputs for the same field, only the last one will be detected.*
 
 </div>
 
@@ -700,7 +698,7 @@ Step 3. The application will display jobs with all matching fields in the *main 
 
 ### 5.5 Sorting all jobs: `sort job`
 
-Have too many job listings and need a way to organise them? You can get *CANdidates* to help you do that by sorting them according to the priority or vacancies you have indicated for the job listings!
+Have too many job listings and need a way to organise them? You can get *CANdidates* to help you do that by sorting them according to these fields: job title, company name, priority or vacancies.
 
 **Format** `sort job type/FIELD_TO_SORT order/ORDER`
 
@@ -709,8 +707,6 @@ Have too many job listings and need a way to organise them? You can get *CANdida
 :exclamation: *Sorting will only apply to the current viewable list. e.g. Using* `sort job` *command after a* `find job` *command will only sort the list of job listings that were listed after the* `find job` *command.*
 <br>
 :memo: *The* `FIELD_TO_SORT` *can be either* `n`, `c`, `pr` *or* `v` *depending on whether you wish to sort the job listings by the job title, company name, priority level or number of vacancies respectively.*
-<br>
-:memo: *If you provide more than one* `FIELD_TO_SORT` *or* `ORDER` *, only the last one will be taken in as input e.g.* `sort job type/pr order/asc type/v order/desc` *will sort the job listings according to vacancies in descending order.* 
 <br>
 :memo: *The* `ORDER` *can be either* `asc` *or* `desc` *depending on whether you wish the sorting to be done in an ascending or descending manner.*
 
@@ -893,7 +889,7 @@ Step 2. The *CANdidates* application will show the following message in the *res
 
 <br>
 
-Step 3. The help window will appear as a pop-up and you may click on the "copy URL" button. This URL (link) will direct you to *CANdidates*'s User Guide, which is this document!
+Step 3. The help window will appear as a pop-up and you may click on the "copy URL" button. This URL link will direct you to *CANdidates*'s User Guide, which is this document!
 
 ![help message 3](images/helpMessage2.png)
 
