@@ -142,7 +142,7 @@ This will help you to understand *CANdidates*' features better.
 * Input fields can be in any order you want them to be.<br>
   e.g. if the command specifies `n/NAME p/PHONE_NUMBER`, `p/PHONE_NUMBER n/NAME` is also acceptable.
   
-* If there are multiple inputs for the same input field, only the last one will be accepted.
+* If there are multiple inputs for the same input field, only the last one will be accepted. The only exception is the tag field for `add` and `edit` commands as there can be multiple tags.
 
 *:bulb: If you need help with the various input fields, refer to [Section 2.4. Understanding Input Fields](#24-understanding-input-fields).*
 
@@ -320,6 +320,8 @@ the field you are interested in, along with the keyword you are looking for!
 <br>
 :memo: *For number fields (i.e. phone, years of experience and expected salary), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
 <br>
+:memo: If you input multiple keywords for the tag field, candidates who have tags containing all the keywords will be displayed, e.g. `find can t/teacher tuition` will show a list of candidates with both the tags "teacher" and "tuition"
+<br>
 :bulb: *If you do not want to see blacklisted candidates in the list, you can use the command `find can bl/false`, the resulting list will show only non-blacklisted candidates.*
 <br>
 :bulb: *If you want to find candidates with no expected salary, you can use the command `sort can type/sal order/asc`
@@ -370,8 +372,6 @@ You can view all the candidates in the order you wish to by typing in your desir
 :memo: *The type input must be one of* `type/n`, `type/exp`, `type/sal`, `type/bl` *or* `type/doa` *depending on whether you wish to sort the candidates by their name, experience, expected salary, blacklist status or data of application respectively.*
 <br>
 :memo: *The order input must be specified as either* `order/asc` *or* `order/desc` *depending on whether you wish the sorting to be done in an ascending or descending manner.*
-<br>
-:memo: *If you provide more than one* `FIELD_TO_SORT` *or* `ORDER` *, only the last one will be taken in as input e.g.* `sort can type/exp order/asc type/sal order/desc` *will sort the candidates according to expected salary in descending order.* 
 <br>
 
 </div>
@@ -664,6 +664,8 @@ simply by inserting keywords for the field(s) you are looking for!
 :memo: *The order of the keywords does not matter, e.g. King Burger will match Burger King*
 <br>
 :memo: *For number fields (i.e. phone and vacancy), only exact matching results will be displayed. For the remaining fields, results containing and exactly matching the keywords will be displayed.*
+<br>
+:memo: *If you input multiple keywords for the tag field, job listings which have tags containing all the keywords will be displayed, e.g. `find job t/cleaner fulltime` will show a list of jobs with the tags "cleaner" and "fulltime"*
 
 </div>
 
