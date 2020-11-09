@@ -430,6 +430,8 @@ The `redo can` command does the opposite — it calls `Model#redoPersonAddre
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Step 5. The user then decides to execute the command `list can`. Commands that do not modify the address book, such as `list can` and `help`, will usually not call `Model#commitPersonAddressBook()`, `Model#undoPersonAddressBook()` or `Model#redoPersonAddressBook()`. Thus, the `personAddressBookStateList` remains unchanged.
 
 ![UndoRedoState4](images/UndoRedoState4.png)
@@ -437,6 +439,8 @@ Step 5. The user then decides to execute the command `list can`. Commands that d
 Step 6. The user executes `clear can`, which calls `Model#commitPersonAddressBook()`. Since the `currentStatePointer` is not pointing at the end of the `personAddressBookStateList`, all address book states after the `currentStatePointer` will be purged. Reason: It no longer makes sense to redo the `add can n/David …​` command. This is the behavior that most modern desktop applications follow.
 
 ![UndoRedoState5](images/UndoRedoState5.png)
+
+<div style="page-break-after: always;"></div>
 
 The following activity diagram summarizes what happens when a user executes a new command:
 
@@ -462,6 +466,8 @@ The following activity diagram summarizes what happens when a user executes a ne
   * Cons: We must ensure that the implementation of each individual command are correct.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 ## **5. Documentation, logging, testing, configuration, dev-ops**
 
@@ -495,6 +501,7 @@ The following activity diagram summarizes what happens when a user executes a ne
 * Search for job candidates and job openings by various fields.
 * Sort job candidates and job openings by various fields.
 
+<div style="page-break-after: always;"></div>
 
 ### 6.2 User stories
 
