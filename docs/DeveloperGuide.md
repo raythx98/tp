@@ -110,7 +110,7 @@ Given below is the Sequence Diagram for interactions within the `Logic` componen
 
 ![Interactions Inside the Logic Component for the `delete can 1` Command](images/DeleteSequenceDiagram.png)
 
-<div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `DeletePersonCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
+<div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `DeletePersonCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram. This applies to all sequence diagrams in this Developer Guide.
 </div>
 
 <div style="page-break-after: always;"></div>
@@ -423,10 +423,6 @@ than attempting to perform the undo.
 The following sequence diagram shows how the `undo can` operation works:
 
 ![UndoSequenceDiagram](images/UndoSequenceDiagram.png)
-
-<div markdown="span" class="alert alert-info">:information_source: **Note:** The lifeline for `UndoPersonCommand` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram.
-
-</div>
 
 The `redo can` command does the opposite — it calls `Model#redoPersonAddressBook()`, which shifts the `currentStatePointer` once to the right, pointing to the previously undone state, and restores the person address book to that state.
 
