@@ -31,6 +31,8 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
   * In charge of looking after code quality and ensuring adherence to coding standards such as SLAP and KISS principles
   * Regularly reviewed pull requests to ensure good code quality and coding standards
   * Manage release of Candidates.jar v1.4 <br>
+  
+<div style="page-break-after: always;"></div>
  
 * **Enhancements to existing features**: 
   * Modified AddressBookParser class of AB3 to be able to parse new commands of CANdidates
@@ -46,8 +48,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
   * Created several test classes used to test new Information fields and new commands, improved code coverage by %7.80 in one PR
     (Example Pull requests [\#97](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/97), [\#119](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/119), 
     [\#121](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/121))
-
-<div style="page-break-after: always;"></div>
 
 * **Documentation**:
   * User Guide:
