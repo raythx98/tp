@@ -36,7 +36,7 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
   * Implemented the chaining of multiple search predicates [\#137](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/137)
   * Wrote numerous utility classes for the purpose of testing (examples: [\#85](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/85), [\#87](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/87))
   * Wrote additional tests for existing features to increase code coverage by 12.16% (examples: [\#93](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/93), [\#126](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/126), [\#126](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/126), [\#138](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/138))
-  * Forced the application to fail gracefully when data files are corrupted [\#269](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/269)
+  * Patched the application to fail gracefully when data files are corrupted [\#269](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/269)
 
 * **Documentation**:
   * Readme:
