@@ -106,7 +106,7 @@ Name of input field   | How to use them
 ----------------------|------------------------------------
 `NAME`                | Name of candidate being added or edited.<br/>:memo: *Names should contain only alphanumerical values or spaces.*
 `PHONE_NUMBER`        | Contact number of candidate or job listing being added or edited.
-`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-can-edit-can) *or* [edit job](#53-editing-a-job-edit-job) *feature to correct it.*
+`EMAIL`               | Contact email address of candidate or job listing being added or edited.<br/>:exclamation: *CANdidates does not check that the email exists, only that the format is correct.* <br/>:bulb:*If you entered an erroneous email address, use the* [edit can](#43-editing-a-candidate-edit-can) *or* [edit job](#53-editing-a-job-edit-job) *feature to correct it.*
 `ADDRESS`             | Residential address of a candidate or work address of a job listing.
 `YEARS_OF_EXPERIENCE` | Years of experience of the candidate in the relevant job he/she applied for.<br/>:memo: *This field accepts up to 2 decimal points excluding trailing zeroes.*
 `DATE_OF_APPLICATION` | Date of application submitted by candidate.<br/>:memo: *Date should be in the format of DD-MM-YY*<br/>:bulb: *Day and Month can be 1 or 2 digits as long as they are valid.*<br/>:black_nib: *If the date of application is 31 September 2021, input* `doa/31-9-21`
