@@ -11,11 +11,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
 
 * **Code contributed**: [RepoSense link](https://nus-cs2103-ay2021s1.github.io/tp-dashboard/#breakdown=true&search=breadpeanutbutter&sort=groupTitle&sortWithin=title&since=2020-08-14&timeframe=commit&mergegroup=&groupSelect=groupByRepos&checkedFileTypes=docs~functional-code~test-code~other&tabOpen=false)
 
-* **New Feature: Experience Information field**
-  * What it is for: A field used to represent the number of years of experience of a candidate. Internally, it is represented as an Experience object.
-  * Justification: This Information field allows job recruiters to store and keep track of the number of years of experience that candidates have.
-    This is an important value that most employers look out for. This field is also useful when used as input for the Sort and Find features. <br>
-
 * **New Feature: URL Link Information field**     
   * What it is for: A field used to represent a URL link to a candidate's profile such as his/her LinkedIn or Github page. 
     It is an optional input field for candidates since not all candidates have an online profile page. Internally, it is represented as a UrlLink object.
@@ -26,20 +21,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
     Hence, I decided to utilise Java's Optional class to contain UrlLink in an Optional object for safer results. 
   * Hightlight: It was also a challenge to validate the format of URL links as there are numerous possibilities. I decided to use a third party library, 
     Apache Commons Validator, to validate the format for this.
-    
-<div style="page-break-after: always;"></div>   
-
-* **New Feature: Salary Information field**           
-  * What it is for: A field used to represent the expected salary of a candidate. Internally, it is represented as a Salary object.
-  * Justification:  This Information field allows job recruiters to store and keep track of the expected salary of candidates. This is an important field
-    as recruiters can use this information to match candidates with suitable jobs. This field is also useful when used as input for the Sort and Find features.
-  * Highlight: Similar to URLLink, Salary is also represented as an Optional object in candidates. <br>
-  
-* **New Feature: Date Information field**           
-  * What it is for: A field used to represent the date of application of a candidate. Internally, it is represented as a Date object.
-  * Justification: This Information field allows job recruiters to keep track of the date that candidates applied for a job. This is important as 
-    job recruiters should not take too long to follow up with candidates. 
-    This field is also useful when used as input for the Sort and Find features. <br>
 
 * **New Feature: Blacklist Information field**           
   * What it is for: A field used to represent the blacklist status of candidates, i.e whether a candidate has been blacklisted.
@@ -50,6 +31,8 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
   * In charge of looking after code quality and ensuring adherence to coding standards such as SLAP and KISS principles
   * Regularly reviewed pull requests to ensure good code quality and coding standards
   * Manage release of Candidates.jar v1.4 <br>
+  
+<div style="page-break-after: always;"></div>
  
 * **Enhancements to existing features**: 
   * Modified AddressBookParser class of AB3 to be able to parse new commands of CANdidates
@@ -62,15 +45,9 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
     (Pull requests [\#86](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/86), [\#90](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/90))
   * Added command summary table to Help Window
     (Pull requests [\#260](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/260))
-  * Modified existing Information fields to adhere to new requirements, such as being optional and having a maximum length of input
-    (Pull requests [\#119](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/119), [\#241](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/241), 
-    [\#268](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/268))
   * Created several test classes used to test new Information fields and new commands, improved code coverage by %7.80 in one PR
     (Example Pull requests [\#97](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/97), [\#119](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/119), 
     [\#121](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/121))
-
-<br>
-<div style="page-break-after: always;"></div>
 
 * **Documentation**:
   * User Guide:
@@ -97,8 +74,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
       Editing a candidate, Detecting duplicate candidates, Deleting a candidate and Clearing all entries
       (Pull requests [\#276](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/276))
 
-<br>
-
 * **Community**: 
   * PRs reviewed (with non-trivial review comments): [\#287](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/287), 
     [\#302](https://github.com/AY2021S1-CS2103T-T17-3/tp/pull/302)
@@ -108,8 +83,6 @@ The user interacts with it using a CLI, and it has a GUI created with JavaFX. It
     * PE-D testing: [\#1](https://github.com/BreadPeanutButter/ped/issues/1), [\#2](https://github.com/BreadPeanutButter/ped/issues/2), 
     [\#3](https://github.com/BreadPeanutButter/ped/issues/3), [\#6](https://github.com/BreadPeanutButter/ped/issues/6)
   * Contributed to forum discussions: [\#147](https://github.com/nus-cs2103-AY2021S1/forum/issues/147)
-  
-<br>
 
 * **Tools**: 
   * Integrated a third party library (Apache Commons Validator) to the project used to 
